@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit&family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.phone{
+    display: none;
+}
+:root{
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+
+  --Font-size (paragraph): 14px
+}
+img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: var(--Cream);
+    font-size: var(--Font-size);
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    border-radius: 10px;
+    width: 39rem;
+    display: flex;
+}
+.img-container{
+    min-width: 19rem;
+    height: 25rem;
+}
+.container-info{
+    background-color: white;
+    max-width: 19rem;
+    position: relative;
+    height: 25rem;
+}
+.box{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.box h5{
+    margin: 15px 0;
+    color: var(--Dark-grayish-blue);
+}
+.box h2{
+    margin: 10px 0;
+}
+.box .p-1{
+    color:rgb(73, 41, 41);
+    display: grid;
+    color: var(--Dark-grayish-blue);
+}
+.box p:last-child{
+    margin-top: 14px;
+    display: flex;
+    line-height: 32px;
+    gap: 1rem;
+    font-weight: 700;
+    text-align: center;
+    font-size: xx-large;
+}
+.box p:last-child{
+    color: var(--Dark-cyan);
+}
+.box p:last-child small{
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+}
+.button{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    background-color:var(--Dark-cyan);
+    color: var(--White);
+    padding: 15px 8px;
+    border-radius: 7px;
+    width: 100%;
+    gap: 20px;
+    border: none;
+}
+
+@media (max-width:660px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 23rem;
+    }
+    .img-container{
+        width: 100%;
+    }
+    .desk{
+        display: none;
+    }
+    .phone{
+        display: block;
+        width: 100%;
+    }
+
+    .container-info{
+        width: 100%;
+        max-width: 23rem;
+    }
+}
+@media (max-width:408px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+    }
+    .img-container{
+        width: 100%;
+    }
+    .desk{
+        display: none;
+    }
+    .phone{
+        display: block;
+        width: 100%;
+    }
+
+    .container-info{
+        width: 100%;
+        max-width: 23rem;
+    }
+}
+@media (max-width:340px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 19rem;
+    }
+    .img-container{
+        width: 100%;
+        min-width: 14rem;
+    }
+    .desk{
+        display: none;
+    }
+    .phone{
+        display: block;
+        width: 100%;
+    }
+
+    .container-info{
+        width: 100%;
+        max-width: 23rem;
+    }
+}
+
+@media (max-width:326px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 16rem;
+    }
+    .img-container{
+        width: 100%;
+    }
+    .desk{
+        display: none;
+    }
+    .phone{
+        display: block;
+        width: 100%;
+    }
+
+    .container-info{
+        width: 100%;
+        max-width: 23rem;
+    }
+}
+
+@media (max-width: 265px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 14rem;
+    }
+    .img-container{
+        width: 100%;
+    }
+    .desk{
+        display: none;
+    }
+    .phone{
+        display: block;
+        width: 100%;
+    }
+
+    .container-info{
+        width: 100%;
+        max-width: 23rem;
+    }
+}
+
